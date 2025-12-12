@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Assignment.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #699856;}
+.s1 { color: #d4d4d4;}
+.s2 { color: #47a2ed;}
+.s3 { color: #cd9069;}
+.s4 { color: #b4cda8;}
+</style>
+</head>
+<body bgcolor="#1e1e1e">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Assignment.java</font>
+</center></td></tr></table>
+<pre><span class="s0">//Anthony Ian DL. Mejico</span>
+<span class="s0">//BSIT 2A</span>
+
+<span class="s2">package </span><span class="s1">Activity;</span>
+
+<span class="s2">public class </span><span class="s1">Main {</span>
+
+    <span class="s2">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">Car car1 = </span><span class="s2">new </span><span class="s1">Car();</span>
+        <span class="s1">Car car2 = </span><span class="s2">new </span><span class="s1">Car(</span><span class="s3">&quot;Toyota&quot;</span><span class="s1">,</span><span class="s3">&quot;Vios&quot;</span><span class="s1">,</span><span class="s4">2020</span><span class="s1">,</span><span class="s4">750000.0</span><span class="s1">);</span>
+        <span class="s1">Car car3 = </span><span class="s2">new </span><span class="s1">Car(car2);</span>
+
+        <span class="s1">car1.displayInfo();</span>
+        <span class="s1">car2.displayInfo();</span>
+        <span class="s1">car3.displayInfo();</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+<span class="s2">package </span><span class="s1">Activity;</span>
+
+<span class="s2">public class </span><span class="s1">Car {</span>
+    <span class="s1">String brand;</span>
+    <span class="s1">String model;</span>
+    <span class="s2">int </span><span class="s1">year;</span>
+    <span class="s2">double </span><span class="s1">price;</span>
+    <span class="s2">public </span><span class="s1">Car(){</span>
+        <span class="s1">System.out.println(</span><span class="s3">&quot;Default Constructor Called&quot;</span><span class="s1">);</span>
+        <span class="s2">this</span><span class="s1">.brand = </span><span class="s3">&quot;Unknown&quot;</span><span class="s1">;</span>
+        <span class="s2">this</span><span class="s1">.model = </span><span class="s3">&quot;Unknown&quot;</span><span class="s1">;</span>
+        <span class="s2">this</span><span class="s1">.year = </span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s2">this</span><span class="s1">.price = </span><span class="s4">0.00</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s2">public </span><span class="s1">Car(String brand, String model, </span><span class="s2">int </span><span class="s1">year, </span><span class="s2">double </span><span class="s1">price){</span>
+        <span class="s2">this</span><span class="s1">.brand = brand;</span>
+        <span class="s2">this</span><span class="s1">.model = model;</span>
+        <span class="s2">this</span><span class="s1">.year = year;</span>
+        <span class="s2">this</span><span class="s1">.price = price;</span>
+    <span class="s1">}</span>
+
+    <span class="s2">public </span><span class="s1">Car(Car c){</span>
+        <span class="s2">this</span><span class="s1">.brand = c.brand;</span>
+        <span class="s2">this</span><span class="s1">.model = c.model;</span>
+        <span class="s2">this</span><span class="s1">.year = c.year;</span>
+        <span class="s2">this</span><span class="s1">.price = c.price;</span>
+    <span class="s1">}</span>
+
+    <span class="s2">public void </span><span class="s1">displayInfo(){</span>
+        <span class="s1">System.out.println(</span><span class="s3">&quot;Brand: &quot; </span><span class="s1">+ brand);</span>
+        <span class="s1">System.out.println(</span><span class="s3">&quot;Model: &quot; </span><span class="s1">+ model);</span>
+        <span class="s1">System.out.println(</span><span class="s3">&quot;Year: &quot; </span><span class="s1">+ year);</span>
+        <span class="s1">System.out.println(</span><span class="s3">&quot;Price: &quot; </span><span class="s1">+ price);</span>
+        <span class="s1">System.out.println();</span>
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
